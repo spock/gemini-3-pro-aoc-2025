@@ -17,3 +17,4 @@ Day five part two was the first where "thinking" phase started getting slower - 
 The problem was still solved within 2 or at most 3 minutes.  
 
 Day six part two had a 42-second thinking phase. The puzzle was still correctly solved within 2-3 minutes.
+Day seven part one required 2 minutes of thinking, part two needed 2'20". Scripts are now 80-100 lines, and have more comments.
