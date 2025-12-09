@@ -19,3 +19,6 @@ The problem was still solved within 2 or at most 3 minutes.
 Day six part two had a 42-second thinking phase. The puzzle was still correctly solved within 2-3 minutes.
 Day seven part one required 2 minutes of thinking, part two needed 2'20". Scripts are now 80-100 lines, and have more comments.
 Day eight was again faster.
+Day nine: nothing out of the ordinary.
+With the latest update, I now get asked for confirmation twice (when implementation plan is ready and before running the script), may need to change that.
+Updating antigravity's own task file has now failed fort he 2nd time, I wonder if this is because I'm instructing to solve all puzzles within the same chat context since day 1.
