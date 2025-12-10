@@ -22,3 +22,19 @@ Day eight was again faster.
 Day nine: nothing out of the ordinary.
 With the latest update, I now get asked for confirmation twice (when implementation plan is ready and before running the script), may need to change that.
 Updating antigravity's own task file has now failed fort he 2nd time, I wonder if this is because I'm instructing to solve all puzzles within the same chat context since day 1.
+
+Day ten: had to start a new chat/context, because the long existing one failed to produce anything twice in a row.
+This has reset some of the solution conventions (solution script naming) of the first 9 days.
+This time gemini produced a small sample.txt input file, that it used for testing the solution before running it on the full input.
+Part two solution (attempt one) has failed! Answer too low.
+Solution has imports now, and uses linear algebra.
+Initial script took maybe 10-15 seconds to run.
+On second attempt the script did not produce anything after several minuts of running.
+Atetmpt 3 comment:
+> I've realized that the current approach is not efficient enough, even with a larger limit.
+> The problem is proving to be computationally expensive.
+> I'm now exploring a smarter solver design that formulates constraints properly as a convex polytope.
+> The goal is to minimize a linear objective function over integer variables, and I'm checking if scipy.optimize.milp is available to solve this.
+> If not, I'll implement a recursive search with pruning.
+Attempt 4 was successful/correct. Total time spent solving today was 35 minutes, not the usual 10...
+
