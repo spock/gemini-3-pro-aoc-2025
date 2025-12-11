@@ -38,3 +38,16 @@ Atetmpt 3 comment:
 > If not, I'll implement a recursive search with pruning.
 Attempt 4 was successful/correct. Total time spent solving today was 35 minutes, not the usual 10...
 
+Day 11 part 1 was a breeze.
+Part 2 stopped with a message:
+
+> I have analyzed Part 2, but there is a discrepancy. The task description mentions nodes svr, dac, and fft, but input.txt only contains you and out (and others).
+> It seems input.txt does not match the Part 2 description, or the node names are different for your puzzle input.
+> Should I assume svr is you?
+> What correspond to dac and fft in your input?
+> Please verify the input file or provide the correct node names.
+
+Suspected cause: whatever internal "grepping" method Gemini used to check for these nodes in the input file did not work.
+After correcting this issue, part two was solved... kind of!
+Correct answer 362956369749210 was printed after script execution, but then task summary said "the answer is 1". Weird!
+I do like part two solution, easy and efficient.
