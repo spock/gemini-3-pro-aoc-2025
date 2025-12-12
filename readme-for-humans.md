@@ -16,38 +16,44 @@ And the solution script seems to only have 20 lines or so.
 Day five part two was the first where "thinking" phase started getting slower - 25 seconds for one such phase.  
 The problem was still solved within 2 or at most 3 minutes.  
 
-Day six part two had a 42-second thinking phase. The puzzle was still correctly solved within 2-3 minutes.
-Day seven part one required 2 minutes of thinking, part two needed 2'20". Scripts are now 80-100 lines, and have more comments.
-Day eight was again faster.
-Day nine: nothing out of the ordinary.
-With the latest update, I now get asked for confirmation twice (when implementation plan is ready and before running the script), may need to change that.
-Updating antigravity's own task file has now failed fort he 2nd time, I wonder if this is because I'm instructing to solve all puzzles within the same chat context since day 1.
+Day six part two had a 42-second thinking phase. The puzzle was still correctly solved within 2-3 minutes.  
+Day seven part one required 2 minutes of thinking, part two needed 2'20". Scripts are now 80-100 lines, and have more comments.  
+Day eight was again faster.  
+Day nine: nothing out of the ordinary.  
+With the latest update, I now get asked for confirmation twice (when implementation plan is ready and before running the script), may need to change that.  
+Updating antigravity's own task file has now failed fort he 2nd time, I wonder if this is because I'm instructing to solve all puzzles within the same chat context since day 1.  
 
-Day ten: had to start a new chat/context, because the long existing one failed to produce anything twice in a row.
-This has reset some of the solution conventions (solution script naming) of the first 9 days.
-This time gemini produced a small sample.txt input file, that it used for testing the solution before running it on the full input.
-Part two solution (attempt one) has failed! Answer too low.
-Solution has imports now, and uses linear algebra.
-Initial script took maybe 10-15 seconds to run.
-On second attempt the script did not produce anything after several minuts of running.
-Atetmpt 3 comment:
-> I've realized that the current approach is not efficient enough, even with a larger limit.
-> The problem is proving to be computationally expensive.
-> I'm now exploring a smarter solver design that formulates constraints properly as a convex polytope.
-> The goal is to minimize a linear objective function over integer variables, and I'm checking if scipy.optimize.milp is available to solve this.
-> If not, I'll implement a recursive search with pruning.
-Attempt 4 was successful/correct. Total time spent solving today was 35 minutes, not the usual 10...
+Day ten: had to start a new chat/context, because the long existing one failed to produce anything twice in a row.  
+This has reset some of the solution conventions (solution script naming) of the first 9 days.  
+This time gemini produced a small sample.txt input file, that it used for testing the solution before running it on the full input.  
+Part two solution (attempt one) has failed! Answer too low.  
+Solution has imports now, and uses linear algebra.  
+Initial script took maybe 10-15 seconds to run.  
+On second attempt the script did not produce anything after several minuts of running.  
+Atetmpt 3 comment:  
+> I've realized that the current approach is not efficient enough, even with a larger limit.  
+> The problem is proving to be computationally expensive.  
+> I'm now exploring a smarter solver design that formulates constraints properly as a convex polytope.  
+> The goal is to minimize a linear objective function over integer variables, and I'm checking if scipy.optimize.milp is available to solve this.  
+> If not, I'll implement a recursive search with pruning.  
+Attempt 4 was successful/correct. Total time spent solving today was 35 minutes, not the usual 10...  
 
-Day 11 part 1 was a breeze.
+Day 11 part 1 was a breeze.  
 Part 2 stopped with a message:
 
-> I have analyzed Part 2, but there is a discrepancy. The task description mentions nodes svr, dac, and fft, but input.txt only contains you and out (and others).
-> It seems input.txt does not match the Part 2 description, or the node names are different for your puzzle input.
-> Should I assume svr is you?
-> What correspond to dac and fft in your input?
+> I have analyzed Part 2, but there is a discrepancy. The task description mentions nodes svr, dac, and fft, but input.txt only contains you and out (and others).  
+> It seems input.txt does not match the Part 2 description, or the node names are different for your puzzle input.  
+> Should I assume svr is you?  
+> What correspond to dac and fft in your input?  
 > Please verify the input file or provide the correct node names.
 
-Suspected cause: whatever internal "grepping" method Gemini used to check for these nodes in the input file did not work.
-After correcting this issue, part two was solved... kind of!
-Correct answer 362956369749210 was printed after script execution, but then task summary said "the answer is 1". Weird!
+Suspected cause: whatever internal "grepping" method Gemini used to check for these nodes in the input file did not work.  
+After correcting this issue, part two was solved... kind of!  
+Correct answer 362956369749210 was printed after script execution, but then task summary said "the answer is 1". Weird!  
 I do like part two solution, easy and efficient.
+
+Day 12 was again solved on the first attempt.  
+
+This experiment has taken away the thinking and learning from me, but allowed to "go through" all the puzzles rather quickly.  
+
+Obviously, having a solution that you don't know how it works is not a good idea.  
